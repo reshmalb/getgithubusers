@@ -1,25 +1,24 @@
-import React from 'react'
 import React,{useState} from 'react';
 import GitHubUsers from './GitHubUsers';
 
 const SearchIUser = () => {
-    const [username,setusername]=useState(null)
+    const [username,setusername]=useState("")
     return (
       
-      <>
-       <div>
-          <form>
+      
+       < div className='form-group'>
+          <form className='search-form'>
               <input type="text"
                placeholder='Enter username'
-               onChange={(event)=>setusername(event.target.value)}
+               onChange={(event)=>setusername(event.target.value) } 
                ></input>            
           </form>        
-      </div>
-      <div>
+     
+      <div className='result'>
         {username ? <GitHubUsers username={username}/>: <p> Please initiate a search!!!</p> }
       </div>
-
-      </>
+      </div>
+      
       
     )
 }
