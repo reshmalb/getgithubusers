@@ -1,38 +1,12 @@
-*{
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
+.app{
+  max-width: 100%;
+  height: 100vmax;
+  background-color: var(--font-color);
+  color:var(--main-color);
+  margin: 0;
+  padding: 0;
 }
-li{
-  list-style :none;
-}
-.search{
-  display: flex;
-  flex-direction: column;  
-  justify-content: center;
-}
-.search-form{
-  margin-bottom: 0.5rem;
-}
-.search-form .form-group INPUT{
-  margin-top: 30px;
-  margin-left: 0.2rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding:0.5rem;
- 
-  width: 20rem;
-}
-.result .github-user .details{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  margin-top: 0.2rem;
-}
-.result .github-user .details IMG{
-  width:200px;
-  height:200px;
-  border-radius: 50%;
-}
+
+
+
+

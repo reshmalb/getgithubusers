@@ -10,8 +10,12 @@ const useGitHub = (username) => {
         const fetchData= async()=>{
             setLoading(true);
             try{
-                 const response= await fetch(`https://api.github.com/users/${username}`)
+                 const response= await fetch(`https://api.github.com/users/${username}`,
+                 {headers: {
+                    'User-Agent': 'request'
+                  }})
                  const responsedata=await response.json();
+                 console.log(responsedata)
                  setuser(responsedata)
                  setLoading(false)
 

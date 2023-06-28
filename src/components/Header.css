@@ -1,0 +1,11 @@
+.header{
+    pointer-events: none;
+    background-color: #002333;
+    color: black;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px #636363;
+    color:  White;
+
+}
